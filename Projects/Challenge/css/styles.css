@@ -1,0 +1,176 @@
+:root {
+  /*Colors*/
+  /*Primary*/
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+
+  /*Neutral*/
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+
+  /*Font*/
+  --red-hat-font: "Red Hat Display", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--red-hat-font);
+}
+
+button {
+  border-radius: 10px;
+  border: none;
+  height: 50px;
+  width: 100%;
+  margin: 0 0 3% 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.main-container {
+  background-image: url(../images/pattern-background-desktop.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: var(--Pale-blue);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.order-card {
+  width: 400px;
+  height: 640px;
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+.order-image {
+  background-image: url(../images/illustration-hero.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 20px 20px 0 0;
+  height: 196px;
+}
+
+.order-info {
+  height: 300px;
+  padding: 10%;
+}
+
+.title-info {
+  color: var(--Dark-blue);
+  font-weight: 900;
+  font-size: 1.7rem;
+}
+
+.paragraph-info {
+  color: var(--Desaturated-blue);
+  line-height: 1.5;
+  font-size: 1rem;
+  margin: 5% auto;
+}
+
+.info-summary {
+  display: flex;
+  margin: 10% 0;
+  text-align: left;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--Very-pale-blue);
+  border-radius: 10px;
+  height: 90px;
+}
+
+.info-summary img {
+  height: 45px;
+}
+
+.summary-detail {
+  margin-right: 50px;
+}
+
+.summary-detail h2 {
+  color: var(--Dark-blue);
+  font-weight: 900;
+  font-size: 1rem;
+}
+
+.summary-detail span {
+  color: var(--Desaturated-blue);
+  font-size: 1rem;
+}
+
+.summary-change {
+  font-weight: 900;
+  color: var(--Bright-blue);
+  margin-right: 10px;
+  font-size: 0.9rem;
+}
+
+.summary-change:hover {
+  text-decoration: none;
+  color: hsl(245, 95%, 59%);
+}
+
+/* Button */
+
+.primary-btn {
+  background-color: var(--Bright-blue);
+  color: var(--Very-pale-blue);
+  font-weight: 900;
+  box-shadow: 0px 25px 18px -3px rgb(56, 41, 224, 0.17);
+}
+
+.secondary-btn {
+  color: var(--Desaturated-blue);
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.primary-btn:hover {
+  background-color: hsl(245, 95%, 59%);
+  box-shadow: 0px 25px 18px -3px hsla(245, 95%, 59%, 0.17);
+}
+
+.secondary-btn:hover {
+  color: var(--Dark-blue);
+}
+
+@media (min-width: 330px) and (max-width: 1320px) {
+  .main-container {
+    background-image: none;
+  }
+
+  .order-card {
+    width: 368px;
+  }
+
+  .order-image {
+    height: 180px;
+  }
+
+  .order-info {
+    padding: 10% 8%;
+  }
+
+  .title-info {
+    font-size: 1.5rem;
+  }
+
+  .paragraph-info {
+    font-size: 1.1rem;
+    margin: 7% 2%;
+  }
+
+  .info-summary {
+    width: 100%;
+  }
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,300;8..144,400;8..144,600;8..144,700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS  -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Font Awesom -->
+    <script src="https://kit.fontawesome.com/fa6870cfc4.js" crossorigin="anonymous"></script>
+
+    <title>Music MP3 Player</title>
+</head>
+
+<body>
+    <main class="mp3-player-container">
+
+        <section class="mp3-player">
+            <article class="art-box" id="art">
+                <button class="icon"><i class="fa-solid fa-list fa-2xl" style="color: #ffff;"></i></button>
+            </article>
+            <article class="controls-box">
+                <div class="control-letter">
+                    <h2>Monkey Island Theme</h2>
+                    <p>Michael Land</p>
+                </div>
+                <div class="control-sound">
+                    <button class="box prev"> <i class="fa-solid fa-backward-step fa-2xl"></i></button>
+                    <button class="box play "> <i class="fa-solid fa-play fa-2xl"></i> </button>
+                    <button class="box pause remove-control"> <i class="fa-solid fa-pause fa-2xl"></i> </button>
+                    <button class="box next"> <i class="fa-solid fa-forward-step fa-2xl"></i> </button>
+                </div>
+            </article>
+            <article class="status-box">
+                <p>Cuando sólo hay un candidato, sólo hay una elección</p>
+            </article>
+            <div class="set-progres" id="progres">
+                <div id="prog"></div>
+            </div>
+        </section>
+        <div class="topnav" id="mytopnav">
+            <button class="playlist-but 1">1. Michael Land - Monkey Island theme</button>
+            <hr>
+            <button class="playlist-but 2">2. Michael Land - The SCUMM Bar</button>
+            <hr>
+            <button class="playlist-but 3">3. Michael Land - LeChuck's theme</button>
+            <hr>
+            <button class="playlist-but 4" |>4. Michael Land - Monkey Island (Remix)</button>
+            <hr>
+        </div>
+        <audio src="./sounds/02 TheScummBar.mp3" id="audio"></audio>
+        <h2 id="challenge">Key Press</h2>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
